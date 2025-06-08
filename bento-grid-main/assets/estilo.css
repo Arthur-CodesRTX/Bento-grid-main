@@ -12,17 +12,12 @@ body{
     background-color: #e9e9e9;
 }
 
-img{
-    width: 40px;
-}
-
 .mainBackground{    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
 }
 
 .mainFlex{
