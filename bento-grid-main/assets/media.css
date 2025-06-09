@@ -9,11 +9,16 @@
 .mainFlex{
     display: grid;
     grid-template-columns:repeat(4,17.5rem);
-    grid-template-rows: repeat(7,7.5rem);
+    grid-template-rows: auto auto auto;
     max-width: 90rem;
     gap: 2rem;
     margin: 2rem;
 }
+
+/* article{
+    width: fit-content;
+    height: fit-content;
+} */
 
 
 .mainSocial{
@@ -22,9 +27,42 @@
     width: 100%;
 }
 
+.mainSocial .socialTittle{
+    text-align: center;
+}
+
+.socialTextMobile{
+    display: none;
+}
+
+.socialTextDesktop{
+    display: inline-block;
+}
+
 .mainAccounts{
     grid-column: 2;
     grid-row: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content:flex-end;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.floatingIcons{
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    right: -80px;
+    gap: 4rem;
+}
+
+.mainAccounts .accountsTittle{
+    text-align: left;
+    font-size: 1.8rem;
+    width: 70%;
 }
 
 .mainData{
