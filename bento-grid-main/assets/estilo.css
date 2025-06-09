@@ -38,6 +38,10 @@ body{
     line-height: 1;
 }
 
+.socialTextDesktop{
+    display: none;
+}
+
 .mainSocial .socialTittle{
     font-size: 3.2rem;
     font-weight: 500;
@@ -52,7 +56,7 @@ body{
 
 .socialSubTittle{
     font-size: 3.2rem;
-    font-weight: 700;
+    font-weight: 500;
     
 }
 
@@ -76,16 +80,44 @@ body{
     line-height: 1;
 }
 
-.mainAccounts h1{
+.mainAccounts .accountsTittle{
     font-size: 1.6rem;
     font-weight: 700;
 }
 
-.mainAccounts img{
-    width: 100%;
-    border-radius: 40%;
-    margin-left: -1rem;
-    padding: 0;
+.floatingIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.iconBox{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    background-color: white;
+    border-radius: 80px;
+    padding: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.iconBox p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+small{
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.fa-brands{
+    background-color: hsl(39, 100%, 71%);
+    padding: 0.4rem;
+    height: fit-content;
+    border-radius: 50%;
+    color:hsl(256, 67%, 59%);
+    font-size: 1.2rem;
 }
 
 .mainData{
