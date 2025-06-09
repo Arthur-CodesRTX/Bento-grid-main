@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
   <link rel="stylesheet" href="assets/estilo.css">
   <link rel="stylesheet" href="assets/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Bento grid</title>
   
 </head>
@@ -14,14 +15,35 @@
     <main class="mainBackground">
       <div class="mainFlex">
         <article class="mainSocial">
-          <h1 class="socialTittle">Social Media</h1>
-          <h2 class="socialSubTittle"><i><span>10x</span> Faster with AI</i></h2>
+          <div class="socialTextMobile">
+            <h1 class="socialTittle">Social Media</h1>
+            <h2 class="socialSubTittle"><i><span>10x</span> Faster with AI</i></h2>
+          </div>
+          <div class="socialTextDesktop">
+            <h1 class="socialTittle">Social Media <i><span>10x</span></h1>
+            <h2 class="socialSubTittle">Faster with AI</i></h2>
+          </div>
           <img src="assets/images/illustration-five-stars.webp" alt="five-stars">
           <p class="socialDescription">Over 4,000 5-star reviews</p>
         </article>
 
         <article class="mainAccounts">
-          <img src="assets/images/illustration-multiple-platforms.webp" alt="post-followers">
+          <div class="floatingIcons">
+            <div class="iconBox instagram">
+              <i class="fa-brands fa-instagram"></i>
+            <div>
+            <p>@YourCo</p>
+            <small>12K Followers</small>
+            </div>
+          </div>
+          <div class="iconBox x">
+            <i class="fa-brands fa-x-twitter"></i>
+            <div>
+              <p>@YourCo</p>
+              <small>8K Followers</small>
+            </div>
+          </div>
+        </div>
           <h1 class="accountsTittle">Manage multiple accounts and platforms.</h1>
         </article>
 
