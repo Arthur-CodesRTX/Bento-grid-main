@@ -108,7 +108,7 @@ body{
 
 small{
     color: #ccc;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 .fa-brands{
@@ -161,7 +161,7 @@ small{
 
 .mainGraphic img{
     width: 100%;
-    padding: 1rem 0;
+    padding: 0rem 0rem;
 }
 
 .mainGraphicFollowers{
