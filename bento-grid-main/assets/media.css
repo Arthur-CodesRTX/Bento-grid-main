@@ -4,15 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .mainFlex{
     display: grid;
-    grid-template-columns:repeat(4,17.5rem);
+    grid-template-columns:repeat(4,18rem);
     grid-template-rows: auto auto auto;
     max-width: 90rem;
     gap: 2rem;
-    margin: 2rem;
+    margin: 0rem;
 }
 
 /* article{
@@ -49,30 +50,94 @@
     position: relative;
     overflow: hidden;
     width: fit-content;
+    padding: 1.5rem;
+    padding-top: 8rem;
+}
+
+.iconsText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.iconsText p{
+    font-size: 1.2rem;
+}
+
+.iconBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands{
+    padding: 0.5rem;
+    font-size: 1.4rem;
+}
+
+small{
+    font-size: 1rem;
 }
 
 .floatingIcons{
     position: absolute;
     top: 0;
-    margin-top: 2rem;
-    right: -80px;
-    gap: 4rem;
+    margin-top: 2.5rem;
+    right: -95px;
+    gap: 2rem;
 }
 
 .mainAccounts .accountsTittle{
     text-align: left;
-    font-size: 1.8rem;
-    width: 70%;
+    font-size: 2rem;
+    width: 100%;
 }
 
 .mainData{
     grid-column: 3;
     grid-row: 3 / 5;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainData img{
+    position: absolute;
+    bottom: -80px;
+    width: 80%;
+    left: 10%;
+}
+
+.dataText h1{
+    font-size: 2rem;
 }
 
 .mainGraphic{
     grid-column: 4 / -1;
     grid-row: 1 / 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 23rem;
+}
+
+.mainGraphic h1{
+    font-size: 2rem;
+    text-align: left;
+}
+
+.mainGraphic p{
+    text-align: left;
+}
+
+.mainGraphic img{
+    position: absolute;
+    width: 125%;
+    top: 21%;
+    /* padding-left: 1rem; */
+    left: 5%;
 }
 
 .mainGraphicFollowers{
@@ -102,6 +167,15 @@
 .mainAudience{
     grid-column: 2;
     grid-row: 5 / 7;
+}
+
+.mainAudience .audienceInformation{
+    width: 100%;
+}
+
+.audienceInformation img{
+    margin-top: 1rem;
+    width: 80%;
 }
 
 .mainCreateContent{
