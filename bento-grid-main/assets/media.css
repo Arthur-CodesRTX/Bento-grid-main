@@ -1,190 +1,221 @@
 @media screen and (min-width:90em) {
 
-.mainBackground{ 
+.mainBackground { 
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
     height: 100vh;
 }
 
-.mainFlex{
+.mainFlex {
     display: grid;
-    grid-template-columns:repeat(4,18rem);
+    grid-template-columns: repeat(4, 16rem);
     grid-template-rows: auto auto auto;
     max-width: 90rem;
     gap: 2rem;
-    margin: 0rem;
+    margin: 0;
 }
 
-/* article{
-    width: fit-content;
-    height: fit-content;
-} */
-
-
-.mainSocial{
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
+.mainCreateContent {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
-.mainSocial .socialTittle{
-    text-align: center;
+.mainContentAi {
+    grid-column: 1;
+    grid-row: 4 / 8;
+    width: 100%;
 }
 
-.socialTextMobile{
+.mainSocial {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    width: 100%;
+    
+}
+
+.socialTextMobile {
     display: none;
 }
 
-.socialTextDesktop{
+.socialTextDesktop {
     display: inline-block;
 }
 
-.mainAccounts{
+.mainAccounts {
     grid-column: 2;
     grid-row: 3 / 5;
     display: flex;
     flex-direction: column;
-    align-items:start;
-    justify-content:flex-end;
+    align-items: flex-start;
+    justify-content: flex-end;
     position: relative;
     overflow: hidden;
-    width: fit-content;
+    width: 100%;
     padding: 1.5rem;
     padding-top: 8rem;
 }
 
-.iconsText{
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-}
-
-.iconsText p{
-    font-size: 1.2rem;
-}
-
-.iconBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fa-brands{
-    padding: 0.5rem;
-    font-size: 1.4rem;
-}
-
-small{
-    font-size: 1rem;
-}
-
-.floatingIcons{
-    position: absolute;
-    top: 0;
-    margin-top: 2.5rem;
-    right: -95px;
-    gap: 2rem;
-}
-
-.mainAccounts .accountsTittle{
-    text-align: left;
-    font-size: 2rem;
-    width: 100%;
-}
-
-.mainData{
+.mainData {
     grid-column: 3;
     grid-row: 3 / 5;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
-.mainData img{
+.mainGraphic {
+    grid-column: 4 / -1;
+    grid-row: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    gap: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+}
+
+.mainAudience {
+    grid-column: 2;
+    grid-row: 5 / 8;
+    width: 100%;
+}
+
+.mainGraphicFollowers {
+    grid-column: 3 / -1;
+    grid-row: 5 / 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.graphicTextFollow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.graphicTextFollow img {
+    width: 45%;
+}
+
+.graphicTextFollow h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.mainGraphic h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.mainGraphic p {
+    text-align: left;
+}
+
+.mainGraphic img {
+    position: absolute;
+    width: 140%;
+    top: 25%;
+    left: 5rem;
+}
+
+.mainData img {
     position: absolute;
     bottom: -80px;
     width: 80%;
     left: 10%;
 }
 
-.dataText h1{
+.dataText h1 {
     font-size: 2rem;
+    line-height: 1;
 }
 
-.mainGraphic{
-    grid-column: 4 / -1;
-    grid-row: 1 / 5;
-    position: relative;
+.mainAccounts .accountsTittle {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    line-height: 1;
+}
+
+.floatingIcons {
+    position: absolute;
+    top: 0;
+    margin-top: 2.5rem;
+    right: -95px;
+}
+
+.iconsText {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.iconsText p {
+    font-size: 1.2rem;
+}
+
+.iconBox {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    gap: 23rem;
 }
 
-.mainGraphic h1{
-    font-size: 2rem;
-    text-align: left;
+.fa-brands {
+    padding: 0.5rem;
+    font-size: 1.4rem;
 }
 
-.mainGraphic p{
-    text-align: left;
+small {
+    font-size: 1rem;
 }
 
-.mainGraphic img{
-    position: absolute;
-    width: 125%;
-    top: 21%;
-    /* padding-left: 1rem; */
-    left: 5%;
-}
-
-.mainGraphicFollowers{
-    grid-column: 3 / -1;
-    grid-row: 5 / 7;
-    padding: 1rem 2rem;
-}
-
-.mainGraphicFollowers .graphicTextFollow{
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.mainGraphicFollowers .graphicTextFollow h1{
-    font-size: 2.2rem;
-    text-align:left;
-    letter-spacing: 1;
-    font-weight: 400;
-}
-
-.mainGraphicFollowers .graphicTextFollow img{
-    width: 45%
-}
-
-.mainAudience{
-    grid-column: 2;
-    grid-row: 5 / 7;
-}
-
-.mainAudience .audienceInformation{
+.audienceInformation {
     width: 100%;
 }
 
-.audienceInformation img{
+.audienceInformation img {
     margin-top: 1rem;
     width: 80%;
 }
 
-.mainCreateContent{
-    grid-column: 1;
-    grid-row: 1 / 4;
+.createContentTittle {
+    font-size: 2.2rem;
+    margin-top: 2rem;
 }
 
-.mainContentAi{
-    grid-column: 1;
-    grid-row: 4 / 7;
+.mainCreateContent img {
+    width: 75%;
+    margin-top: 0.5rem;
+}
+
+.mainContentAi img {
+    width: 70%;
+}
+
+.contentAiTittle {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
 }
 }
+
+
+/* .mainFlex > * {
+  outline: 1px solid red;  só para visualização 
+} */
