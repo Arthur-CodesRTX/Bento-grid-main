@@ -2,95 +2,127 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+
+  <!-- Ícone do site (comentado porque não está sendo usado) -->
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
+
+  <!-- Estilos principais do site -->
   <link rel="stylesheet" href="assets/estilo.css">
   <link rel="stylesheet" href="assets/media.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Frontend Mentor | Bento grid</title>
-  
-</head>
-  <body>
-    <main class="mainBackground">
-      <div class="mainFlex">
-        <article class="mainSocial">
-          <div class="socialTextMobile">
-            <h1 class="socialTittle">Social Media</h1>
-            <h2 class="socialSubTittle"><i><span>10x</span> Faster with AI</i></h2>
-          </div>
-          <div class="socialTextDesktop">
-            <h1 class="socialTittle">Social Media <i><span>10x</span></h1>
-            <h2 class="socialSubTittle">Faster with AI</i></h2>
-          </div>
-          <img src="assets/images/illustration-five-stars.webp" alt="five-stars">
-          <p class="socialDescription">Over 4,000 5-star reviews</p>
-        </article>
 
-        <article class="mainAccounts">
-          <div class="floatingIcons">
-            <div class="iconBox instagram">
-              <i class="fa-brands fa-instagram"></i>
-            <div>
-            <p>@YourCo</p>
-            <small>12K Followers</small>
+  <!-- Ícones do Font Awesome (como o do Instagram e Twitter) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | Bento grid</title>
+</head>
+
+<body>
+  <!-- Container principal -->
+  <main class="mainBackground">
+    <!-- Flex container com todos os blocos (artigos) -->
+    <div class="mainFlex">
+
+      <!-- Bloco: Social Media (avaliações e título com destaque em "10x") -->
+      <article class="mainSocial">
+        <!-- Texto para mobile -->
+        <div class="socialTextMobile">
+          <h1 class="socialTittle">Social Media</h1>
+          <h2 class="socialSubTittle"><i><span>10x</span> Faster with AI</i></h2>
+        </div>
+
+        <!-- Texto para desktop (dividido em duas linhas com o <i> em lugar diferente) -->
+        <div class="socialTextDesktop">
+          <h1 class="socialTittle">Social Media <i><span>10x</span></h1>
+          <h2 class="socialSubTittle">Faster with AI</i></h2>
+        </div>
+
+        <!-- Imagem de avaliação com 5 estrelas -->
+        <img src="assets/images/illustration-five-stars.webp" alt="five-stars">
+
+        <!-- Descrição de destaque -->
+        <p class="socialDescription">Over 4,000 5-star reviews</p>
+      </article>
+
+      <!-- Bloco: Contas sociais (Instagram e Twitter com número de seguidores) -->
+      <article class="mainAccounts">
+        <div class="floatingIcons">
+
+          <!-- Ícone Instagram -->
+          <div class="iconBox instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="iconsText">
+              <p>@YourCo</p>
+              <small>12K Followers</small>
             </div>
           </div>
+
+          <!-- Ícone Twitter/X -->
           <div class="iconBox x">
             <i class="fa-brands fa-x-twitter"></i>
-            <div>
+            <div class="iconsText">
               <p>@YourCo</p>
               <small>8K Followers</small>
             </div>
           </div>
         </div>
-          <h1 class="accountsTittle">Manage multiple accounts and platforms.</h1>
-        </article>
 
-        <article class="mainData">
-          <div class="dataText">
-            <h1 class="dataTittle">Maintain a consistent posting schedule.</h1>
-            <img src="assets/images/illustration-consistent-schedule.webp" alt="data-august">
-          </div>
-        </article>
+        <!-- Título explicando o recurso -->
+        <h1 class="accountsTittle">Manage multiple accounts and platforms.</h1>
+      </article>
 
-        <article class="mainGraphic">
-          <h1 class="graphicTittle">Schedule to social media.</h1>
-          <img src="assets/images/illustration-schedule-posts.webp" alt="grafico-de-posts">
-          <p class="graphicDescription">Optimize post timings to publish content at the perfect time for your audience.</p>
-        </article>
+      <!-- Bloco: Agendamento de postagens -->
+      <article class="mainData">
+        <div class="dataText">
+          <h1 class="dataTittle">Maintain a consistent posting schedule.</h1>
+          <img src="assets/images/illustration-consistent-schedule.webp" alt="data-august">
+        </div>
+      </article>
 
-        <article class="mainGraphicFollowers">
-          <div class="graphicTextFollow">
-            <img src="assets/images/illustration-grow-followers.webp" alt="aumento-de-seguidores">
-            <h1 class="graphicFollowersTittle">Grow followers with non-stop content.</h1>
-          </div>
-        </article>
+      <!-- Bloco: Agendando para redes sociais -->
+      <article class="mainGraphic">
+        <h1 class="graphicTittle">Schedule to social media.</h1>
+        <img src="assets/images/illustration-schedule-posts.webp" alt="grafico-de-posts">
+        <p class="graphicDescription">Optimize post timings to publish content at the perfect time for your audience.</p>
+      </article>
 
-        <article class="mainAudience">
-          <h1 class="audienceTittle">>56%</h1>
-          <div class="audienceInformation">
-            <p class="audienceDescription">faster audience growth</p>
-            <img src="assets/images/illustration-audience-growth.webp" alt="audiência-em-imagens">
-          </div>
-        </article>
+      <!-- Bloco: Crescimento de seguidores -->
+      <article class="mainGraphicFollowers">
+        <div class="graphicTextFollow">
+          <img src="assets/images/illustration-grow-followers.webp" alt="aumento-de-seguidores">
+          <h1 class="graphicFollowersTittle">Grow followers with non-stop content.</h1>
+        </div>
+      </article>
 
-        <article class="mainCreateContent">
-          <h1 class="createContentTittle">Create and schedule content <span>quicker.</span></h1>
-          <img src="assets/images/illustration-create-post.webp" alt="criando-post">
-        </article>
+      <!-- Bloco: Crescimento de audiência -->
+      <article class="mainAudience">
+        <h1 class="audienceTittle">>56%</h1>
+        <div class="audienceInformation">
+          <p class="audienceDescription">faster audience growth</p>
+          <img src="assets/images/illustration-audience-growth.webp" alt="audiência-em-imagens">
+        </div>
+      </article>
 
-        <article class="mainContentAi">
-          <h1 class="contentAiTittle">Write your content using AI.</h1>
-          <img src="assets/images/illustration-ai-content.webp" alt="usando-ai-para-escrever">
-        </article>
-      </div>
-    
+      <!-- Bloco: Criação de conteúdo (com destaque para agilidade) -->
+      <article class="mainCreateContent">
+        <h1 class="createContentTittle">Create and schedule content <span>quicker.</span></h1>
+        <img src="assets/images/illustration-create-post.webp" alt="criando-post">
+      </article>
 
-    <!-- <div class="attribution">
+      <!-- Bloco: Escrita com IA -->
+      <article class="mainContentAi">
+        <h1 class="contentAiTittle">Write your content using AI.</h1>
+        <img src="assets/images/illustration-ai-content.webp" alt="usando-ai-para-escrever">
+      </article>
+    </div>
+
+    <!-- Rodapé de créditos (comentado) -->
+    <!-- 
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
       Coded by <a href="#">Arthur Poeta</a>.
-    </div> -->
-    </main>
-  </body>
+    </div>
+    -->
+  </main>
+</body>
 </html>
